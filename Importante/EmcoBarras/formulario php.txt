@@ -1,0 +1,26 @@
+<?php
+include 'conexionbd.php';
+
+echo "<h2></h2>";
+$referencia= $_POST['referencia'];
+$marca= $_POST['marca'];
+$color= $_POST['color'];
+$talla= $_POST['talla'];
+$sku= $_POST['sku'];
+
+echo "<center>";
+echo "<h2>¡Sku creado con exito!</h2>";
+echo "<h4>Los datos ingresados son:</h4>";
+echo "Referencia: " . $referencia . "<br/>";
+echo "Marca: " . $marca . "<br/>";
+echo "Color: " . $color . "<br/>";
+echo "Talla: " . $talla . "<br/>";
+echo "Sku: " . $sku . "<br/>";
+
+$conn->query ("UPDATE RegistroSku
+SET referencia = '$referencia', marca = '$marca', color = '$color', talla = $talla, asignar = 1
+WHERE sku = '$sku'");
+
+die;
+
+?>

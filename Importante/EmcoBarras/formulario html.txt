@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" type="text/css" MEDIA=screen>
+  <title>Asignacion de Sku</title>
+</head>
+<body>
+  <section class="form-register">
+    <h4>ASIGNACION DE SKU</h4>
+    </br>
+    <form action="formulario.php" method="POST">
+      <label>Referencia</label>
+      <input class="controls" type="text" name="referencia" required value="">
+      </br>
+      <label>Marca</label>
+      <input class="controls" type="text" name="marca" required value=""></br>
+      <label>Color</label>
+      <input class="controls" type="text" name="color" required value="">
+      </br>
+      <label>Talla</label>
+      <input class="controls" type="text" name="talla" required value="">
+      </br>
+      </br>
+      <a class="button" id="cargar" onclick="cargar(this)">Generar sku</a>
+      </br>
+      <label for="">Sku</label>
+      <input class="controls" id="sku" name="sku" required></input>
+      </br>
+      </br>
+      <button type="submit" name="button" class="botons btn btn-success">Asignar Sku</button>
+    </form>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
