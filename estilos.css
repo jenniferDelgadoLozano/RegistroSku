@@ -1,0 +1,82 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'franklin gothic book';
+}
+
+body{
+	background-size: cover;
+}
+
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: #24303c;
+	font-size: 20px;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+
+.menu{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+  position: static; // Fixed
+
+}
+.menu a {
+	display: block;
+	padding: 2em;
+	background-color: #24303c;
+	text-decoration: none;
+	color: white;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	background-color: #00FFFF;
+	color: black;
+}
+
+.menu ul li ul {
+	display: none;
+}
+
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+	display: block;
+}
+
+header#menu .menu ul{
+	display: none;
+}
+
+header#menu .menu ul li a{
+	background:#fff;
+	color: #494949;
+}
+
+header#menu .menu  ul li acccccccc{
+	background:#e9e9e9;
+	color: #fff;
+}
+
+header#menu .menu .icono.izquierda{
+	float: left;
+	margin-right: 10px;
+}
