@@ -1,0 +1,257 @@
+* {
+  margin: 50;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'franklin gothic book';
+  margin: 5px;
+}
+
+body {
+  color: #fff;
+  font: 100 1em 'Fira Sans', sans-serif;
+  background-image: url("../../Fondo/fondo.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+/* div.third {
+  background: rgba(64, 165, 73);
+  padding: 7px;
+  text-align: center;
+  font-size: 34px;
+  font-family: 'lato';
+} */
+
+.form-register {
+  width: 1000px;
+  background: #24303c;
+  /* opacity: 0.9;
+  filter:  alpha(opacity=90); */
+  padding: 30px;
+  margin: 20% auto;
+  margin-top: 60px;
+  border-radius: 10px;
+  font-family: 'franklin gothic medium';
+  color: white;
+  text-align: center;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'lato';
+}
+
+.controls {
+  width: 40%;
+  background: #24303c;
+  padding: 2px;
+  border-radius: 10px;
+  margin-bottom: 0.5px;
+  border: 1px solid #00FFFF;
+  font-family: 'franklin gothic book';
+  font-size: 18px;
+  color: white;
+  float: center;
+  display: inline-block;
+}
+
+.controlsi {
+  width: 40%;
+  background: #24303c;
+  padding: 2px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #00FFFF;
+  font-family: 'franklin gothic book';
+  font-size: 18px;
+  color: white;
+  float: center;
+}
+
+.controlse {
+  width: 5%;
+  background: #24303c;
+  padding: 2px;
+  border-radius: 10px;
+  margin-bottom: 9px;
+  border: 1px solid #00FFFF;
+  font-family: 'franklin gothic book';
+  font-size: 18px;
+  color: white;
+  float: center;
+}
+
+label {
+    width: 25%;
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Lato';
+    color: white;
+    padding: 0.5px;
+}
+
+.labele {
+    width: 25%;
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Lato';
+    color: white;
+    padding: 0.5px;
+}
+
+.form-register botons {
+  width: 50%;
+  background: #00FFFF;
+  border: outset;
+  padding: 3px;
+  color: black;
+  margin: 16px 0;
+  font-size: 18px;
+  font-family: 'Helvetica';
+}
+
+.form-register button {
+  width: 45%;
+  background: #00FFFF;
+  color: black;
+  border: outset;
+  padding: 3px;
+  float: center;
+  margin: 13px 0;
+  font-size: 16px;
+  font-family: 'Helvetica';
+}
+
+/* .form-register a {
+  background: yellow;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #00FFFF;
+  font-family: 'franklin gothic book';
+  font-size: 18px;
+  color: green;
+  float: center;
+  width: 20%;
+  display: inline-block;
+} */
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+#header {
+  margin:auto;
+  width:500px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+  list-style:none;
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  background-color:#ffffff;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+
+.nav li a:hover {
+  background-color:#ff0000;
+}
+
+.nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+    float:right;
+  /* position:relative; */
+}
+
+.nav li ul li ul {
+  right:-140px;
+  top:0px;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+.container-4{
+  overflow: hidden;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.container-4 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* .container-4 input#search::-webkit-input-placeholder {
+   color: #65737e;
+} */
+.container-4 input#search:-moz-placeholder {
+   color: #65737e;
+}
+/* .container-4 input#search::-moz-placeholder {
+   color: #65737e;
+} */
+/* .container-4 input#search:-ms-input-placeholder {
+   color: #65737e;
+} */
+
+.container-4 button.icon{
+  /* -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px; */
+  -moz-border-radius-topright: 5px;
+  /* -moz-border-radius-bottomright: 5px; */
+  border-top-right-radius: 5px;
+  /* border-bottom-right-radius: 5px; */
+  border: none;
+  background: #24303c;
+  height: 50px;
+  width: 50px;
+  color: white;
+  opacity: 0;
+  font-size: 10pt;
+  -webkit-transition: all .55s ease;
+  /* -moz-transition: all .55s ease; */
+  /* -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease; */
+}
+
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+  }
+  .container-4:hover button.icon:hover{
+    background: #24303c;
+  }

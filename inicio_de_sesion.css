@@ -1,0 +1,122 @@
+
+* {
+    margin: 50;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'franklin gothic book';
+    margin: 5px 0;
+}
+
+body {
+    margin: 0px auto;
+    text-align: center;
+    width: 700px;
+    background-image: url("../../Fondo/fondo.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.form-register {
+  width: 700px;
+  background: #24303c;
+  /* opacity: 0.9;
+  filter:  alpha(opacity=90); */
+  padding: 30px;
+  /* margin: 20% auto; */
+  /* margin-top: 100px; */
+  border-radius: 10px;
+  font-family: 'franklin gothic medium';
+  color: white;
+  text-align: center;
+  box-shadow: 7px 13px 37px #000;
+}
+
+h4 {
+    font-family: 'Passion One';
+    font-size: 29px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Passion One';
+    font-size: 24px;
+}
+
+label {
+    width: 20%;
+    display: inline-block;
+    text-align: left;
+    font-size: 21px;
+    font-family: 'lato';
+    color: white;
+    padding: 0.5px;
+}
+
+input {
+    border: 2px solid #ccc;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Lato';
+    padding: 0.5px;
+    width: 20%;
+    display: inline-block;
+}
+
+.controls {
+  background: #24303c;
+  padding: 0.5px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #00FFFF;
+  font-family: 'franklin gothic book';
+  font-size: 18px;
+  color: white;
+  float: center;
+  width: 60%;
+  display: inline-block;
+}
+
+form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 7px 13px 37px #000;
+    border: 3px solid #ccc;
+    width: 500px;
+    background: #24303c; *fondo*
+    margin: 20% auto;
+    margin-top: 100px;
+}
+
+div.form-element {
+    margin: 20px 0;
+}
+
+button {
+  width: 20%;
+  background: #00FFFF;
+  color: black;
+  border: outset;
+  padding: 4px;
+  float: center;
+  margin: 13px 0;
+  font-size: 21px;
+  font-family: 'Lato';
+}
+
+ p {
+  width: 50%;
+  background: yellow;
+  color: black;
+  border-style: outset;
+  float: center;
+  font-size: 24px;
+  font-family: 'Lato';
+  margin: 100% auto;
+  margin-top: 30px;
+}
+
+div.glyphicon glyphicon-alert {
+  color: yellow;
+  width: 200%;
+}
