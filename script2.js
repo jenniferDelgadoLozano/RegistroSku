@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let searchData = new FormData()
     searchData.append('criterio_busqueda', criterio_busqueda)
     try {
-      const response = await fetch('search_data.php', {
+      const response = await fetch('search_data2.php', {
         method: 'POST',
         body: searchData
       })
@@ -45,13 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
         for (const products of dataResults) {
           const row = document.createElement('tr')
           row.innerHTML = `
-          <td class="text-center">${products.codigo}</td>
-          <td class="text-center">${products.date}</td>
-          <td class="text-center">${products.name}</td>
-          <td class="text-center">${products.movimiento}</td>
-          <td class="text-center">${products.entrada}</td>
-          <td class="text-center">${products.salida}</td>
-          <td class="text-center">${products.stock}</td>
+          <td class="text-center">${products.codigo.toUpperCase().replace(criterio_busqueda, '<span class="bold">$&</span>')}</td>
           `
           tableContainer.appendChild(row)
         }
@@ -60,26 +54,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   // showResults()
 })
-// _____________________________________________________________________________________________________________________________________________________________________
-$(document).ready(function(){
-    var maxField = 10; //Input fields increment limitation
-    var addButton = $('.add_button'); //Add button selector
-    var wrapper = $('.field_wrapper'); //Input field wrapper
-    var fieldHTML = '<div><input type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button" title="Remove field"><img src="remove-icon.png"/></a></div>'; //New input field html 
-    var x = 1; //Initial field counter is 1
-    $(addButton).click(function(){ //Once add button is clicked
-        if(x < maxField){ //Check maximum number of input fields
-            x++; //Increment field counter
-            $(wrapper).append(fieldHTML); // Add field html
-        }
-    });
-    $(wrapper).on('click', '.remove_button', function(e){ //Once remove button is clicked
-        e.preventDefault();
-        $(this).parent('div').remove(); //Remove field html
-        x--; //Decrement field counter
-    });
-});
-
 // _____________________________________________________________________________________________________________________________________________________________________
   if(window.history.replaceState) {
     console.log("¡Ya Ingreso!")
